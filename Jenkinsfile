@@ -10,9 +10,8 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        steps{
-     sh   'app = docker.build("jalaj-devops/Git-Tutorial-DevOps")'
-        }
+       app = docker.build("jalaj-devops/Git-Tutorial-DevOps")'
+        
       
     }
 
